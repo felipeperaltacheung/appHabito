@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import {
   useFonts,
   Inter_400Regular, 
@@ -27,7 +26,7 @@ const [fontsLoaded] = useFonts({
   return (
     <View style={styles.container}>
       <Text style={styles.text}>rrrr </Text>
-      <StatusBar style="auto" />
+      <StatusBar barStyle='light-content' backgroundColor="transparent" translucent/>
     </View>
   );
 }
@@ -40,6 +39,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   text: {
-    color: 'red'
+    color: '#FFF',
+    fontFamily: 'Inter_800ExtraBold'
   }
 });
